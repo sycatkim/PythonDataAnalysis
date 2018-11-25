@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_c0aa1372e9b940208d1b21fc68861805 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_c0aa1372e9b940208d1b21fc68861805" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_c0aa1372e9b940208d1b21fc68861805 = L.map(
+        'map_c0aa1372e9b940208d1b21fc68861805', {
+        center: [20, 0],
+        zoom: 2,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_6e0666590dbb4debbf32a5bd19a4927f = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_c0aa1372e9b940208d1b21fc68861805);
+    
+            var circle_marker_15dc9e906784430fa1d9adf6cb2b732d = L.circleMarker(
+                [-38.0, 145.0],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 40.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_c0aa1372e9b940208d1b21fc68861805);
+            
+    
+            var popup_720043d3519649f185e4803a657530ad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ebc98b1086e742a0a9001744ae148f78 = $(`<div id="html_ebc98b1086e742a0a9001744ae148f78" style="width: 100.0%; height: 100.0%;">melbourne</div>`)[0];
+                popup_720043d3519649f185e4803a657530ad.setContent(html_ebc98b1086e742a0a9001744ae148f78);
+            
+
+            circle_marker_15dc9e906784430fa1d9adf6cb2b732d.bindPopup(popup_720043d3519649f185e4803a657530ad)
+            ;
+
+            
+        
+    
+            var circle_marker_4248527efe7f4cdda244239baba70eac = L.circleMarker(
+                [-38.0, 145.0],
+                {
+  "bubblingMouseEvents": true,
+  "color": "crimson",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "crimson",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 40.0,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_c0aa1372e9b940208d1b21fc68861805);
+            
+    
+            var popup_94dcee94d52442c3b9f246a3b0ee649f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b6c901e03eb2435b950231ba5bfbd29b = $(`<div id="html_b6c901e03eb2435b950231ba5bfbd29b" style="width: 100.0%; height: 100.0%;">melbourne</div>`)[0];
+                popup_94dcee94d52442c3b9f246a3b0ee649f.setContent(html_b6c901e03eb2435b950231ba5bfbd29b);
+            
+
+            circle_marker_4248527efe7f4cdda244239baba70eac.bindPopup(popup_94dcee94d52442c3b9f246a3b0ee649f)
+            ;
+
+            
+        
+</script>
